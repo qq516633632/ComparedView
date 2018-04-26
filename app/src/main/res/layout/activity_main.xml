@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zxq="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+
+  <com.zxq.comparedview.Paredview
+      android:id="@+id/paredview_1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      zxq:lable_text_size="14sp"
+      zxq:pared_hight="15dp"
+      zxq:sussic_color="#B3936A"
+      zxq:no_sussic_color="#35312E"
+      zxq:lable_text_color="#D60031"
+
+      android:layout_marginLeft="10dp"
+
+      android:layout_marginRight="10dp"
+      >
+
+
+  </com.zxq.comparedview.Paredview>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        >
+      <View
+          android:layout_width="30dp"
+          android:layout_height="20dp"
+          android:background="#B3936A"
+          />
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginLeft="8dp"
+          android:text="RNG"
+          android:textColor="#B3936A"
+          android:textSize="14sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="EDG"
+          android:textColor="#35312E"
+          android:textSize="14sp"
+          android:layout_gravity="center"
+          android:layout_marginRight="8dp"
+          />
+      <View
+          android:layout_width="30dp"
+          android:layout_height="20dp"
+          android:background="#35312E"
+          />
+
+
+    </LinearLayout>
+  </RelativeLayout>
+  <SeekBar
+      android:id="@+id/seekbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      />
+
+
+</LinearLayout>

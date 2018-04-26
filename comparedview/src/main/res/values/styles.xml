@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Paredview">
+        <!--文本字体大小-->
+        <attr name="lable_text_size" format="dimension|float" />
+        <!-- 左边进度颜色-->
+        <attr name="sussic_color" format="color" />
+        <!-- 右边进度颜色-->
+        <attr name="no_sussic_color" format="color" />
+        <!-- 进度条高度 -->
+        <attr name="pared_hight" format="dimension" />
+        <!-- 文本颜色-->
+        <attr name="lable_text_color" format="color"></attr>
+        <!--最大值-->
+        <attr name="max_count"  format="integer"/>
+        <!--完成度-->
+        <attr name="sussic_count" format="integer" />
+        <!--底部文字-->
+        <attr name="bottom_text" format="string"/>
+        <!--顶部显示单位-->
+        <attr name="unit_text" format="string" />
+        <!--完成度文本颜色-->
+        <attr name="sussic_lable_text_color"  format="color"/>
+
+    </declare-styleable>
+</resources>
