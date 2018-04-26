@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'//添加
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
@@ -29,18 +29,14 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-/** 以下开始是将Android Library上传到jcenter的相关配置**/
-apply plugin: 'com.novoda.bintray-release'//添加
-//项目主页
-def siteUrl = 'http://git.oschina.net/zhengliang_blog/shadow-view'
-publish{
-    repoName = 'maven'//远程仓库名字,不指明，默认是上传到maven
-    userOrg = 'qq516633632'//bintray.com的用户名
-    groupId = 'com.zxq'//jcenter上的路径
-    artifactId = 'comparedview'//项目名称
+
+publish {
+    userOrg = 'qq516633632'//bintray.com用户名
+    groupId = 'com.zhuxiaoqing.comparedview'//jcenter上的路径
+    artifactId = 'ComparedView'//项目名称
     publishVersion = '1.0.0'//版本号
-    desc = '投票对比进度条'//描述，不重要
-    website = siteUrl//项目主页
+    desc = '投票对比'//描述，不重要
+    website = 'https://github.com/qq516633632/ComparedView'//网站，最好有，不重要
 }
 tasks.withType(Javadoc) {//防止编码问题
     options.addStringOption('Xdoclint:none', '-quiet')
