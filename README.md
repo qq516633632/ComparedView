@@ -8,7 +8,7 @@
 ## 使用方法
 ## Gradle添加引用
 ```
-compile 'com.zhuxiaoqing.comparedview:ComparedView:1.0.0'
+com.zhuxiaoqing.comparedview：ComparisonView：1.0.2'
 
 ```
 ## 在布局中加入
