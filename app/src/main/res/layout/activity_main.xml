@@ -81,12 +81,39 @@
 
     </LinearLayout>
   </RelativeLayout>
-  <SeekBar
-      android:id="@+id/seekbar"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/rng_butn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="支持RNG"
+            android:background="#B3936A"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <Button
+            android:id="@+id/edg_butn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="支持EDG"
+            android:background="#35312E"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
 
 
 </LinearLayout>

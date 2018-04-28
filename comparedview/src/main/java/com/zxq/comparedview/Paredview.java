@@ -129,8 +129,9 @@ public class Paredview extends View{
         this.top_lable_unit = top_lable_unit;
     }
 
-    public void upSussicCount(double sussicCount){
+    public void upSussicCount(double sussicCount,double maxCount){
         this.sussicCount=sussicCount;
+        this.maxCount=maxCount;
         invalidate();
     }
 
@@ -190,7 +191,6 @@ public class Paredview extends View{
 
 
         //绘制进度对比进度条
-        //画左边三角形
 
         double unitw=maxWidth/maxCount;//得到单位长度
         Log.d("onDraw","unitw="+unitw);
