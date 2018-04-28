@@ -86,7 +86,6 @@ compile 'com.zhuxiaoqing.comparedview：ComparisonView：1.0.2''
     </declare-styleable>
 ```  
 
-垂直刻度尺和水平刻度尺通用
 
 
 
