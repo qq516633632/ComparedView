@@ -39,9 +39,24 @@ compile 'com.zhuxiaoqing.comparedview:ComparedView:1.0.0'
         paredview.setTop_lable_unit(top_lable_unit);//设置顶部显示单位
 ```   
 更多配置请查看部分属性的set方法
-## 刷新进度
+## 刷新左边投票
 ```
-void upSussicCount(double sussicCount)
+               sussic_count+=1;
+                maxCount+=1;
+                paredview.upSussicCount(sussic_count,maxCount);
+                
+```
+
+## 刷新右边投票
+```
+                maxCount+=1;
+                paredview.upSussicCount(sussic_count,maxCount);
+```
+
+## 同时刷新两边投票情况
+```
+             void upView(double sussicCount,double noSussicCount)
+
 ```
 
 ## 自定义属性说明

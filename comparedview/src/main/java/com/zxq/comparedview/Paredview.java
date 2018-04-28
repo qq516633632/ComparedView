@@ -135,6 +135,12 @@ public class Paredview extends View{
         invalidate();
     }
 
+    public void upView(double sussicCount,double noSussicCount){
+        this.sussicCount=sussicCount;
+        this.maxCount=sussicCount+noSussicCount;
+        invalidate();
+    }
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         //测量试图大小
